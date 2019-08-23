@@ -4,5 +4,24 @@
   "peerDependencies": {
     "@angular/common": "^8.1.3",
     "@angular/core": "^8.1.3"
-  }
+  },
+  "description":"A simple Angular pipe for abbreviate number (convert zeroes to K).",
+  "author": "Nika Tikhonovets (nika.tikhonovets@gmail.com)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NikaTikhonovets/NgxAbbreviateNumber.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NikaTikhonovets/NgxAbbreviateNumber/issues"
+  },
+  "homepage": "https://github.com/NikaTikhonovets/NgxAbbreviateNumber",
+  "keywords": [
+    "angular",
+    "javascript",
+    "typescript",
+    "number",
+    "pipe",
+    "abbreviate"
+  ],
+  "license": "MIT"
 }
