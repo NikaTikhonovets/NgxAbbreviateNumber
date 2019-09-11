@@ -26,16 +26,4 @@ export class ConvertZeroesService {
 
     return abbreviationNumber;
   }
-
-  public static lengthenNumber(value: string): number {
-    let [num, suffix] = value.match(/\d+|\w+/g);
-    let suffixNum = SUFFIXES.indexOf(suffix);
-    let lengthenedNumber = parseInt(num, 10);
-
-    if (suffixNum !== -1) {
-      lengthenedNumber *= Math.pow(10, (suffixNum + 1) * 3);
-    }
-
-    return lengthenedNumber;
-  }
 }

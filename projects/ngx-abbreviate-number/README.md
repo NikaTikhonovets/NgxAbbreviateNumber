@@ -1,24 +1,54 @@
 # ngx-abbreviate-number
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.3.
+>Angular pipe for abbreviate a number and add unit letters (K, M, B, T)
 
-## Code scaffolding
+[Demo](https://stackblitz.com/edit/ngx-abbreviate-number-demo)
 
-Run `ng generate component component-name --project NgxAbbreviateNumber` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project NgxAbbreviateNumber`.
-> Note: Don't forget to add `--project NgxAbbreviateNumber` or else it will be added to the default project in your `angular.json` file. 
+## Installation
 
-## Build
+ ```terminal
+  $ npm install ngx-abbreviate-number
+  ```
 
-Run `ng build NgxAbbreviateNumber` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Publishing
 
-After building your library with `ng build NgxAbbreviateNumber`, go to the dist folder `cd dist/ngx-abbreviate-number` and run `npm publish`.
+## Usage
 
-## Running unit tests
+Import the `NgxAbbreviateNumberModule` in your `app.module.ts`:
 
-Run `ng test NgxAbbreviateNumber` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```typescript
+import { NgxAbbreviateNumberModule } from 'ngx-abbreviate-number';
 
-## Further help
+@NgModule({
+  ...
+  imports: [
+    ...
+    NgxAbbreviateNumberModule,
+    ...
+  ],
+  ...
+})
+export class AppModule {}
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+##### In HTML template
+```
+{{ currentNumber | abbreviateNumber : decimalPlaces }}
+```
+
+### Arguments
+
+| Param | Type | Details |
+| --- | --- | --- |
+| currentNumber | `number` | Initial value of number |
+| decimalPlaces  | `number` | The number of digits to appear after the decimal point. It defaults to 0. |
+
+## Examples
+| Initial value | Converted value | value of 'decimalPlaces' |
+| --- | --- | --- |
+| 1000 | 1K | default (0) | 
+| 1000000 | 1M | default (0) |
+| 5258 | 5.3K | default (0) |
+| 745203 | 745.2K | default (0) |
+| 5258 | 5.26K | 2 |
+| 6312 | 6.312K | 3 |
