@@ -52,3 +52,11 @@ export class AppModule {}
 | 745203 | 745.2K | default (0) |
 | 5258 | 5.26K | 2 |
 | 6312 | 6.312K | 3 |
+
+## Versions
+| Package version | Angular version |
+|-----------------|-----------------|
+| 3.x             | 19.x            |
+| 2.x             | 17.x            |
+| 1.x             | 15.x            |
+| 0.x             | 8.x             |
