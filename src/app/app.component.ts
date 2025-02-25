@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ngx-abbreviate-number';
+  value = 10000000;
+  count = 3;
 }

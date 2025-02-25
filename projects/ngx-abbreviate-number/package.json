@@ -1,9 +1,9 @@
 {
   "name": "ngx-abbreviate-number",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "peerDependencies": {
-    "@angular/common": "^8.1.3",
-    "@angular/core": "^8.1.3"
+    "@angular/common": "^15.2.10",
+    "@angular/core": "^15.2.10"
   },
   "description":"A simple Angular pipe for abbreviate number (convert zeroes to K).",
   "author": "Nika Tikhonovets (nika.tikhonovets@gmail.com)",
@@ -23,5 +23,8 @@
     "pipe",
     "abbreviate"
   ],
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
   "license": "MIT"
 }
