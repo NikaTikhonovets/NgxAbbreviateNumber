@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { NgxAbbreviateNumberModule } from 'ngx-abbreviate-number';
+import { NgxAbbreviateNumberPipe } from 'ngx-abbreviate-number';
 
 @NgModule({
   declarations: [
@@ -10,9 +10,7 @@ import { NgxAbbreviateNumberModule } from 'ngx-abbreviate-number';
   ],
   imports: [
     BrowserModule,
-    NgxAbbreviateNumberModule,
-    NgxAbbreviateNumberModule,
-    NgxAbbreviateNumberModule
+    NgxAbbreviateNumberPipe,
   ],
   providers: [],
   bootstrap: [AppComponent]

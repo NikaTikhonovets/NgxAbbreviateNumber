@@ -1,1 +1,3 @@
-<p class="value">{{value}} - {{value | abbreviateNumber : count }}</p>
+@for (item of items; track item) {
+  <p>{{item.value}} - {{item.value | abbreviateNumber : item.count }}</p>
+}
